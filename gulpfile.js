@@ -1,5 +1,5 @@
 /*
- * Build file for Jobmatic Client
+ * Build file for flexcss-sample
  * @author David Heidrich (me@bowlingx.com)
  */
 
@@ -162,7 +162,6 @@ gulp.task('default', function (callback) {
     runSequence('clean', ['webserver', 'html', 'watch', 'fonts', 'images', 'compileSass', 'watchScriptsWithDependencies'], callback);
 });
 
-// The default task (called when you run `gulp` from cli)
 gulp.task('dist', function (callback) {
     runSequence('clean', ['fonts', 'images', 'compileSass', 'compileScriptsWithDependencies'], callback);
 });
