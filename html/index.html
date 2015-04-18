@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FlexCss Bootstrap Project</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,600,400' rel='stylesheet'
+          type='text/css'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+</head>
+<body>
+<header id="Header" class="header">
+    <div id="TopBar" class="topbar">
+        <a id="ToggleMainNavigation" class="icon-menu topbar-action navigation-toggler">
+            <span>A second item</span>
+        </a>
+        <a class="right icon-mail-alt topbar-action messages" href="/account/messages">
+        </a>
+    </div>
+    <nav id="MainNavigation" class="navbar-main" role="navigation">
+        <div class="home single-column">
+            <!-- <a class="logo" href="/" data-close-sidebar="data-close-sidebar">Service</a> -->
+        </div>
+        <ul class="main-nav">
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+            <li class="active">
+                <a href="#second">
+                    A second item
+                </a>
+            </li>
+
+        </ul>
+        <ul class="right-nav">
+            <li>
+                <a href="#logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="SidebarDarkener" class="darkener"></div>
+    <div id="DropdownDarkener" class="darkener"></div>
+</header>
+
+<input class="subnav-trigger" id="trigger-subnav" type="checkbox">
+<nav class="navbar-sub subnav-content slidebar">
+    <ul class="subnav">
+        <li><a href="">Item one</a></li>
+        <li><a href="">Item two</a></li>
+        <li class="active"><a href="">Active item</a></li>
+        <li><a href="">Another item</a></li>
+        <li class="trigger"><label for="trigger-subnav"><i class="icon-down-open"></i></label></li>
+    </ul>
+</nav>
+<main class="overall-wrapper main" role="main">
+    <div id="SubnavDarkener" class="subnav-darkener darkener init"></div>
+    <div class="content-wrapper">
+        <div class="wrapper wrapper-center">
+            <div class="page-content">
+                <section class="content" role="region">
+                    <h1>A Demo Page</h1>
+                    <p>Some content with a <a title="This is a tooltip :)" data-tooltip>tooltip</a></p>
+                    <h2>A Form</h2>
+                    <form>
+                        <fieldset>
+                            <legend>A Legend</legend>
+                            <div class="control-group">
+                                <label>A label</label>
+
+                                <div class="controls">
+                                    <input type="email" required/>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-actions">
+                            <button class="button indent-label" type="submit">Login</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>A Footer</p>
+    </footer>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

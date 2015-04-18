@@ -1,0 +1,9 @@
+# Ignore Build and Coverage files
+
+build
+coverage
+
+.idea
+*.iml
+atlassian-ide-plugin.xml
+node_modules
