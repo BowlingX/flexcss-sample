@@ -11,7 +11,7 @@ module.exports = {
                     fs.realpathSync(path.resolve(__dirname, "node_modules/flexcss"))
                 ],
                 test: /\.jsx?$/,
-                loader: 'babel-loader?experimental&optional=runtime&sourceMap=inline'
+                loader: 'babel-loader?optional=runtime&sourceMap=inline'
             }
         ],
         preLoaders: [
