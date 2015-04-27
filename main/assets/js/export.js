@@ -11,7 +11,7 @@ global.document.addEventListener('DOMContentLoaded', () => {
     Settings.setup({scrollbarUpdateNodes: [document.body, document.getElementById('Header')]});
 
     // Create of canvas navigation
-    new OffCanvas('MainNavigation', 'ToggleMainNavigation', 'SidebarDarkener', -1);
+    new OffCanvas('MainNavigation', 'SidebarDarkener', -1).registerEvents();
     // init forms
     Form.init('form');
 
